@@ -78,19 +78,59 @@
   // Branding side
   &-branding {
     background: $primary-color;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); // 100% pushes out of frame in bottom
     @include easeOut;
 
     &.show {
       // Slide in from bottom
       transform: translate3d(0, 0, 0);
     }
+
     .portrait {
       width: 200px;
       height: 267px;
       background: url("../img/portrait2-3.jpg");
-      //   border-radius: 50%;
+      //   border-radius: 50%; circle
       border: solid 3px $secondary-color;
     }
+  }
+
+  .nav-item {
+    transform: translate3d(600px, 0, 0);
+    @include easeOut;
+
+    &.show {
+      // Slide in from right
+      transform: translate3d(0, 0, 0);
+    }
+    // Coloring link
+    &.current > a {
+      color: $secondary-color;
+    }
+  }
+  // Still indside menu / nav item
+  .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 1rem 0; // 1rem top/bottom - 0 left/right
+    font-weight: bold; //300
+    color: #fff;
+    text-decoration: none;
+    @include easeOut;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+// Delay each nav item slide by 0.1s (4 items)
+// Same as in js for(let x = 0; i < 4;i++)
+@for $x from 1 through 4 {
+  // So each item will come separately
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
   }
 }
