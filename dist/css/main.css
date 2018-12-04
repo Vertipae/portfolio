@@ -71,7 +71,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: bold;
-    color: #fff;
+    color: set-color-text(#444);
     text-decoration: none;
     transition: all 0.8s ease-out; }
     .menu .nav-link:hover {
