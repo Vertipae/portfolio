@@ -1,5 +1,5 @@
-@import "config";
-@import "menu";
+@import "config.scss";
+@import "menu.scss";
 
 * {
   box-sizing: border-box;
@@ -58,10 +58,11 @@ main {
 
     a {
       padding: 0.4rem;
+      @include easeOut;
 
       &:hover {
         color: $secondary-color;
-        @include easeOut();
+        // @include easeOut();
       }
     }
   }
@@ -92,7 +93,7 @@ main {
   .bio {
     grid-area: bio;
     font-size: 1.3rem;
-    font-weight: bold; //
+    // font-weight: bold; //
   }
 
   .job-1 {

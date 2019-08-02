@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Portfolio website",
   "main": "index.js",
-  "homepage": "https://vertipae.github.io/MyPortfolio",
+  "homepage": "https://vertipae.github.io/portfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
