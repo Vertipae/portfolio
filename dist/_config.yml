@@ -2,4 +2,4 @@
 
 # title-img: /path/to/image
 
-permalink: pretty
+permalink: /:title/
