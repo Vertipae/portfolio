@@ -11,7 +11,8 @@ body {
   color: set-text-color($primary-color); // function in _config.scss
   height: 100%;
   margin: 0;
-  font-family: Ubuntu, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Nunito", sans-serif, Ubuntu, "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
   line-height: 1.5;
 }
 
