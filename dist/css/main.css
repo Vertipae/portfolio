@@ -101,7 +101,7 @@ body {
   font-family: "Nunito", sans-serif, Ubuntu, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background1-15.jpg);
+    background: url(../img/background1.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -112,7 +112,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.8); }
+      background: rgba(68, 68, 68, 0.5); }
 
 h1,
 h2,
@@ -185,7 +185,10 @@ main {
     border: #9880f0 3px solid; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1rem; }
+    font-size: 1rem;
+    background: rgba(81, 81, 81, 0.555);
+    padding: 0.5rem;
+    border-bottom: #9880f0 5px solid; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
