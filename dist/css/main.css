@@ -186,7 +186,7 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1rem;
-    background: rgba(81, 81, 81, 0.555);
+    background: #515151;
     padding: 0.5rem;
     border-bottom: #9880f0 5px solid; }
   .about-info .job-1 {
